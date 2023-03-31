@@ -1,12 +1,10 @@
 <script>
-    let numeroA = prompt("Digite o primeiro número");
-    let numeroB = prompt("Digite o segundo número");
+    let idade = prompt("Digite a idade:");
 
-    document.write(numeroA);
-    document.write("<br>");
-    document.write(numeroB);
-    document.write("<br>");
+    if (idade > 18) {
+        document.write("Mais de 18 anos.");
+        document.write("<br>");
+    }
 
-    let condicao = (numeroA != numeroB);
-    document.write(condicao)
+    document.write("Fim.");
 </script>
