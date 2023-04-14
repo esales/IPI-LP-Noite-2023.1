@@ -1,0 +1,18 @@
+<script>
+    let valorBase = 60;
+    let taxa = 0;
+    let valorTotal = 0;
+    let diarias = prompt("Digite o número de diárias");
+
+    if (diarias > 15) {
+        taxa = 5.5;
+    } else if (diarias == 15) {
+        taxa = 6;
+    } else {
+        taxa = 8;
+    }
+
+    valorTotal = diarias * (valorBase + taxa);
+
+    document.write("O valor total é: " + valorTotal);
+</script>
