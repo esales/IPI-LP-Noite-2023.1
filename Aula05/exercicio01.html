@@ -1,0 +1,33 @@
+<script>
+    let codigo = prompt("Digite o código do produto");
+    let quantidade = prompt("Digite a quantidade");
+    let descricao = "";
+    let preco = 0;
+    let valorTotal = 0;
+
+    if (codigo == 1) {
+        preco = 25;
+        descricao = "Mussarela";
+    } else if (codigo == 2) {
+        preco = 27;
+        descricao = "Calabresa";
+    } else if (codigo == 3) {
+        preco = 31;
+        descricao = "Charque";
+    } else if (codigo == 4) {
+        preco = 35;
+        descricao = "Quatro queijos";
+    } else {
+        preco = 42;
+        descricao = "Camarão";
+    }
+
+    valorTotal = preco * quantidade;
+    document.write("Sabor: " + descricao);
+    document.write("<br>");
+    document.write("Preço: R$ " + preco);
+    document.write("<br>");
+    document.write("Quantidade: " + quantidade)
+    document.write("<br>");
+    document.write("Valor total: R$ " + valorTotal);
+</script>

@@ -1,0 +1,27 @@
+<script>
+    let nota = prompt("Digite a nota");
+    let conceito = "";
+    let notaValida = true;
+
+    if (nota < 0) {
+        notaValida = false;
+    } else if (nota <= 39) {
+        conceito = "Insuficiente";
+    } else if (nota <= 59) {
+        conceito = "Regular";
+    } else if (nota <= 89) {
+        conceito = "Bom";
+    } else if (nota <= 100) {
+        conceito = "Ótimo";
+    } else {
+        notaValida = false;
+    }
+
+    if (notaValida) {
+        document.write("Nota: " + nota);
+        document.write("<br>");
+        document.write("Conceito: " + conceito);
+    } else {
+        document.write("Nota inválida!");
+    }
+</script>
