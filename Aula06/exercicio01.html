@@ -1,0 +1,35 @@
+<script>
+    let valor = parseInt(prompt("Digite o valor"));
+    let parcelas = parseInt(prompt("Digite o número de parcelas"));
+    let percentualDesconto = 0;
+    let valorFinal = 0;
+
+    switch (parcelas) {
+        case 1:
+            percentualDesconto = 0.2;
+            break;
+
+        case 2:
+            percentualDesconto = 0.15;
+            break;
+
+        case 3:
+        case 4:
+        case 5:
+            percentualDesconto = 0.1;
+            break;
+
+        case 6:
+            percentualDesconto = 0.05;
+            break;
+
+        default:
+            percentualDesconto = 0;
+    }
+
+    valorFinal = valor - (valor * percentualDesconto);
+    document.write("O valor com desconto é " + valorFinal)
+
+
+
+</script>
