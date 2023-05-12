@@ -1,0 +1,13 @@
+<script>
+    let venda = parseFloat(prompt("Digite o valor da venda"));
+    let montante = 0;
+
+    while (venda >= 0) {
+        montante = montante + venda;
+
+        venda = parseFloat(prompt("Digite o valor da venda"));
+    }
+
+    document.write("Valor total:", montante);
+
+</script>
