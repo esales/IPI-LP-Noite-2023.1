@@ -1,0 +1,51 @@
+<script>
+    let idade = 0;
+    let candidato = "";
+
+    let somaA = 0;
+    let quantidadeA = 0;
+    let mediaA
+    let somaB = 0;
+    let quantidadeB = 0;
+    let mediaB = 0;
+
+    let quantidadeNulo = 0;
+
+    idade = parseInt(prompt("Digite a idade"));
+
+    while (idade >= 0) {
+        candidato = prompt("Digite o candidato");
+
+        if (candidato == "A") {
+            somaA = somaA + idade;
+            quantidadeA++;
+        } else if (candidato == "B") {
+            somaB = somaB + idade;
+            quantidadeB++;
+        } else {
+            quantidadeNulo++;
+        }
+
+        idade = parseInt(prompt("Digite a idade"));
+    }
+
+    if (quantidadeA > 0) {
+        mediaA = somaA / quantidadeA;
+        document.write("Média candidato A:", mediaA);
+
+    } else {
+        document.write("O candidato A não teve intenção de votos.")
+    }
+    document.write("<br>");
+
+    if (quantidadeB > 0) {
+        mediaB = somaB / quantidadeB;
+        document.write("Média candidato B:", mediaB);
+    } else {
+        document.write("O candidato B não teve intenção de votos.")
+    }
+    document.write("<br>");
+    document.write("Quantidade nulos:", quantidadeNulo);
+
+
+</script>
