@@ -1,0 +1,26 @@
+<script>
+    let quantidadeA = 0;
+    let quantidadeB = 0;
+    let quantidadeInvalidos = 0;
+    let opcao = "";
+
+    opcao = prompt("Digite a opcao");
+
+    while (opcao != 'X') {
+        if (opcao == 'A') {
+            quantidadeA++;
+        } else if (opcao == 'B') {
+            quantidadeB++;
+        } else {
+            quantidadeInvalidos++;
+        }
+
+        opcao = prompt("Digite a opcao");
+    }
+
+    document.write("Votos em A:", quantidadeA);
+    document.write("<br>");
+    document.write("Votos em B:", quantidadeB);
+    document.write("<br>");
+    document.write("Votos inválidos:", quantidadeInvalidos);
+</script>

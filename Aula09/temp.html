@@ -1,0 +1,22 @@
+<script>
+    let golCasa = 0;
+    let golVisitante = 0;
+    let opcao = 0;
+
+    do {
+        if (opcao == 1) {
+            golCasa++;
+        } else if (opcao == 2) {
+            golVisitante++;
+        }
+
+        console.log("Time da casa " + golCasa + " x " + golVisitante + " Time visitante");
+
+        opcao = prompt("Opções:\n" +
+            "1 - Gol time da casa \n" +
+            "2 - Gol time visitante \n" +
+            "3 - Finalizar partida \n" +
+            "Digite a opção:")
+    } while (opcao != 3);
+
+</script>
