@@ -1,0 +1,26 @@
+<script>
+    let media = 0;
+    let montante = 0;
+    const quantidade = 10;
+    let menorNumero = 9999999;
+    let maiorNumero = -1;
+    let numero = 0;
+
+    for (i = 1; i <= 10; i++) {
+        numero = parseInt(prompt("Digite o " + i + "º número"));
+
+        montante += numero;
+
+        if (numero < menorNumero)
+            menorNumero = numero;
+
+        if (numero > maiorNumero)
+            maiorNumero = numero;
+    }
+
+    media = montante / quantidade;
+
+    document.write("Média: ", media, "<br>");
+    document.write("Maior: ", maiorNumero, "<br>");
+    document.write("Menor: ", menorNumero, "<br>");
+</script>
