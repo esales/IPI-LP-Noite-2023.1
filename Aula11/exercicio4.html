@@ -1,0 +1,33 @@
+<script>
+    let idade = 0;
+    let salario = 0;
+
+    montanteIdadeMais4mil = 0;
+    qtdMais4Mil = 0;
+    mediaIdadeMais4Mil = 0;
+
+    montanteSalarioMenos25Anos = 0;
+    qtdMenos25Anos = 0;
+    mediaSalarioMenos25Anos = 0;
+
+    for (i = 1; i <= 5; i++) {
+        idade = parseInt(prompt("Digite a idade"));
+        salario = parseInt(prompt("Digite o salário"));
+
+        if (salario > 4000) {
+            montanteIdadeMais4mil += idade;
+            qtdMais4Mil++;
+        }
+
+        if (idade < 25) {
+            montanteSalarioMenos25Anos += salario;
+            qtdMenos25Anos++;
+        }
+    }
+
+    mediaIdadeMais4Mil = montanteIdadeMais4mil / qtdMais4Mil;
+    mediaSalarioMenos25Anos = montanteSalarioMenos25Anos / qtdMenos25Anos;
+
+    document.write("Média de idade das pessoas que ganham mais de 4000: ", mediaIdadeMais4Mil, "<br>");
+    document.write("Média de salário das pessoas que tem menos de 25 anos: ", mediaSalarioMenos25Anos);
+</script>

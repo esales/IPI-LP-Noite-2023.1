@@ -1,0 +1,17 @@
+<script>
+    numeroA = 0;
+    numeroB = 1;
+    numeroC = 0;
+
+    //impressão dos dois primeiros números.
+    document.write(numeroA + "<br>");
+    document.write(numeroB + "<br>");
+
+    for (i = 3; i <= 20; i++) {
+        numeroC = numeroA + numeroB;
+        document.write(numeroC + "<br>");
+
+        numeroA = numeroB;
+        numeroB = numeroC;
+    }
+</script>
