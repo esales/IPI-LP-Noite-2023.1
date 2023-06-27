@@ -1,0 +1,12 @@
+<script>
+    let quantidade = prompt("Quantos itens irá comprar?");
+    let item = "";
+    let itens = "";
+
+    for (i = 1; i <= quantidade; i++) {
+        item = prompt("Digite o nome do " + i + "º item");
+        itens += item + "<br>";
+    }
+
+    document.write(itens);
+</script>

@@ -1,0 +1,12 @@
+<script>
+    let quantidade = prompt("Digite a quantidade de postagens.");
+    let likes = 0;
+    let totalLikes = 0;
+
+    for (i = 1; i <= quantidade; i++) {
+        likes = parseInt(prompt("Digite a quantidade de likes da " + i + "ª postagem"));
+        totalLikes += likes;
+    }
+
+    document.write("Total de likes: ", totalLikes);
+</script>
