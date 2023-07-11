@@ -1,0 +1,20 @@
+<script>
+    let curtidas = 0;
+    let comentarios = 0;
+
+    let qtd500curtidas = 0;
+    let montanteComentarios500curtidas = 0;
+    let mediaComentarios500curtidas = 0;
+
+    for (i = 1; i <= 5; i++) {
+        curtidas = parseInt(prompt("Digite o número de curtidas"));
+        comentarios = parseInt(prompt("Digite o número de comentários"));
+
+        if (curtidas > 500) {
+            qtd500curtidas++;
+            montanteComentarios500curtidas += comentarios;
+        }
+    }
+    mediaComentarios500curtidas = montanteComentarios500curtidas / qtd500curtidas;
+    document.write("Média: ", mediaComentarios500curtidas);
+</script>
