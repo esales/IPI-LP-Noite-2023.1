@@ -1,0 +1,17 @@
+<script>
+    let valores = [];
+    let total = 0;
+
+    for (i = 1; i <= 6; i++) {
+        valor = parseFloat(prompt("Digite o valor:"));
+        valores.push(valor);
+    }
+
+    for (i = 0; i <= valores.length - 1; i++) {
+        document.write(valores[i] + "<br>");
+
+        total += valores[i];
+    }
+
+    document.write("Média: ", total / valores.length);
+</script>
